@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 class Month
   attr_accessor :month
   attr_accessor :year
