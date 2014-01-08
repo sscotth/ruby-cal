@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative '../lib/cal'
+require_relative '../cal'
 
 class TestZellersFirstDay < MiniTest::Unit::TestCase
   def test_early_month

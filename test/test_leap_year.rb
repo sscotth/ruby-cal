@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative '../lib/cal'
+require_relative '../cal'
 
 class TestLeapYear < MiniTest::Unit::TestCase
   def test_basic_leap_year
