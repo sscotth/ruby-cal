@@ -39,7 +39,7 @@ class Month
   def to_s(format = 'month')
     if format == 'year'
       calendars = []
-       (1..12).step(3).each do |m|
+      (1..12).step(3).each do |m|
         calendars << Month.new(year,m).to_cal.zip(Month.new(year,m+1).to_cal,Month.new(year,m+2).to_cal).map{|line| line.join('  ')}
       end
       [
