@@ -2,7 +2,6 @@ require 'minitest/autorun'
 require_relative '../cal'
 
 class TestCal < MiniTest::Unit::TestCase
-
   def test_ability_to_interpret_unix_cal
     shell_output = `cal 2 2014`
     shell_output = shell_output.chomp
