@@ -20,7 +20,7 @@ class Month
   def first_day
     z_year = (month == 1 || month == 2) ? (year - 1) : year
     z_month = (month == 1 || month == 2) ? (month + 12) : month
-    day_of_week = (1 + ((z_month+1) * 26/10).floor + z_year + (z_year/4).floor + 6 * (z_year/100).floor + (z_year/400).floor ) % 7
+    day_of_week = (1 + ((z_month+1) * 26/10).floor + z_year + (z_year/4).floor + 6 * (z_year/100).floor + (z_year/400).floor) % 7
     day_of_week == 0 ? 7 : day_of_week
   end
 
