@@ -44,9 +44,9 @@ class Month
       end
       [
         "#{year}".center(63),
-        "",
+        '',
         calendars
-      ].flatten.map(&:rstrip).map.with_index{|line,i| i < 3 ? line : sprintf("%0-44s", line)}
+      ].flatten.map(&:rstrip).map.with_index{|line,i| i < 3 ? line : sprintf('%0-44s', line)}
     else
       to_cal('with_year').map(&:rstrip)
     end
